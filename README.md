@@ -1,48 +1,52 @@
-Emotion_Speech_Recognition_for_Disorder_Speech
+# 🎙️ Emotion Speech Recognition for Disorder Speech
 
+Emotion_Speech_Recognition_for_Disorder_Speech is an advanced emotion recognition system that leverages **signal processing** and **machine learning** techniques to analyze speech patterns in disordered speech. This tool aims to enhance applications in **mental health, assistive communication, and AI-driven interactions**, enabling a more **empathetic and intelligent** human-computer experience.
 
+---
 
-🎤 Introduction
+## 🚀 Key Features  
 
-Emotion_Speech_Recognition_for_Disorder_Speech is a Flask-based web application that processes audio recordings to recognize emotions in disordered speech. The system extracts features from audio files, predicts emotions using a machine learning model, and stores the results in a MySQL database.
+✅ **Emotion Detection for Disordered Speech** – Identifies emotions such as happiness, sadness, anger, and fear with high precision.  
+✅ **Advanced Signal Processing** – Extracts meaningful speech features using industry-standard techniques.  
+✅ **Machine Learning-Powered** – Utilizes **deep learning models** for enhanced recognition.  
+✅ **Real-Time Analysis** – Processes live or recorded audio input for **instant** emotion classification.  
+✅ **Database Integration** – Stores results in a **MySQL** database for further analysis.  
 
-✨ Features
+---
 
-🎵 Upload audio files via a web interface.
+## 🏗️ Tech Stack  
 
-📊 Extract features such as sample rate, channels, decibel level, bit depth, and audio length.
+- **Programming Language:** Python 🐍  
+- **Libraries & Frameworks:** Flask, TensorFlow, Scikit-learn  
+- **Audio Processing:** Librosa 🎵, pydub 🎧  
+- **Database:** MySQL 🗄️  
+- **Visualization:** Matplotlib, Seaborn 📊  
 
-🤖 Predict emotions using a trained machine learning model.
+---
 
-💾 Store results in a MySQL database.
+## 📦 Installation  
 
-🖥️ Display results on a web interface.
+### 🔹 Prerequisites  
+Ensure you have **Python 3.8+** installed.  
 
-🛠 Technologies Used
+### 🔹 Setup Instructions  
 
-Backend: Flask 🐍
+1️⃣ Clone the repository:  
+```bash
+git clone https://github.com/yourusername/Emotion_Speech_Recognition_for_Disorder_Speech.git
+cd Emotion_Speech_Recognition_for_Disorder_Speech
+```
 
-Database: MySQL 🗄️
-
-Machine Learning: Scikit-learn 🤖, TensorFlow 🔥
-
-Audio Processing: pydub 🎼, librosa 🎧
-
-⚡ Installation
-
-Prerequisites
-
-Ensure you have Python installed (>=3.7). Install the required dependencies:
-
+2️⃣ Install dependencies:  
+```bash
 pip install -r requirements.txt
+```
 
-🏛️ Database Setup
-
-Install MySQL and create a database named emotion.
-
-Create a table results inside the emotion schema using the following SQL query:
-
-CREATE TABLE emotion.results (
+3️⃣ Set up the MySQL database:
+```sql
+CREATE DATABASE emotion;
+USE emotion;
+CREATE TABLE results (
     id INT AUTO_INCREMENT PRIMARY KEY,
     emotion VARCHAR(255),
     sample_rate INT,
@@ -51,46 +55,49 @@ CREATE TABLE emotion.results (
     bit_depth INT,
     audio_length FLOAT
 );
+```
 
-🚀 Usage
+---
 
-Running the Application
+## 🚀 Usage  
 
-Start the Flask server:
+### 🔹 Running the Application  
 
+Run the Flask server:  
+```bash
 python app.py
+```
+The application will be available at `http://127.0.0.1:5000/`.
 
-The application will be available at http://127.0.0.1:5000/.
+### 🔹 Uploading an Audio File  
+1. Open the web interface.  
+2. Upload an audio file (.wav format recommended).  
+3. View the detected emotion and audio information.  
 
-🎤 Uploading an Audio File
+### 🔹 Sample Output  
+```
+Detected Emotion: Happy 😊  
+Confidence Score: 92%  
+```
 
-Open the web browser and navigate to the application.
+---
 
-Upload an audio file (.wav format recommended).
+## 🤝 Contributing  
 
-View the detected emotion and audio information.
+We welcome contributions! Please check our [CONTRIBUTING.md](CONTRIBUTING.md) file for guidelines.
 
-📂 Project Structure
+---
 
-Emotion_Speech_Recognition_for_Disorder_Speech/
-│── app.py
-│── model.py
-│── templates/
-│   ├── upload.html
-│   ├── result.html
-│── static/
-│── requirements.txt
-│── README.md
+## 📄 License  
 
-🤝 Contributing
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
-If you want to contribute, fork the repository and submit a pull request.
+---
 
-📜 License
+## 📧 Contact  
 
-This project is licensed under the MIT License.
-
-📧 Contact
-
-👨‍💻 Author: Devalla Bhaskar Ganesh📩 Email: devallabhaskarganesh@gmail.com🔗 LinkedIn: linkedin.com/in/devallabhaskarganesh/
+💡 **Developed by:** Devalla Bhaskar Ganesh  
+📩 Email: devallabhaskarganesh@gmail.com  
+🔗 LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/devallabhaskarganesh/)  
+🌎 GitHub: [Your GitHub Profile](https://github.com/dbhaskarganesh/)  
 
