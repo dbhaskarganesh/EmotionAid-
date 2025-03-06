@@ -1,4 +1,4 @@
-# 🎙️ Emotion Speech Recognition for Disorder Speech
+# 🎙️ EmotionAid -Emotion Speech Recognition for Disorder Speech
 
 Emotion_Speech_Recognition_for_Disorder_Speech is an advanced emotion recognition system that leverages **signal processing** and **machine learning** techniques to analyze speech patterns in disordered speech. This tool aims to enhance applications in **mental health, assistive communication, and AI-driven interactions**, enabling a more **empathetic and intelligent** human-computer experience.
 
